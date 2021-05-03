@@ -6,7 +6,7 @@ const TerserPlugin = require('terser-webpack-plugin');
 module.exports = (env, argv) => {
     var baseUrl;
     if (argv.mode === 'development') {
-        baseUrl = 'https://fitfam-web-app.herokuapp.com/';
+        baseUrl = 'http://localhost:5000/';
     } else {
         baseUrl = 'https://fitfam-web-app.herokuapp.com/';
     }

@@ -2,7 +2,7 @@ import axios from 'axios';
 
 const dummy = () => {
     let promise = new Promise(function (resolve, reject) {
-        axios.get('login')
+        axios.get('clients/test')
             .then(function (response) {
                 resolve(response.data);
             })
