@@ -1,4 +1,3 @@
-const path = require('path');
 const webpack = require('webpack');
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 const TerserPlugin = require('terser-webpack-plugin');
@@ -6,9 +5,9 @@ const TerserPlugin = require('terser-webpack-plugin');
 module.exports = (env, argv) => {
     var baseUrl;
     if (argv.mode === 'development') {
-        baseUrl = 'http://localhost:5000/';
+        baseUrl = 'http://localhost:5000';
     } else {
-        baseUrl = 'https://fitfam-web-app.herokuapp.com/';
+        baseUrl = 'http://localhost:5000';
     }
 
     return {
@@ -17,9 +16,9 @@ module.exports = (env, argv) => {
                 {
                     test: /\.(js|jsx)$/,
                     exclude: /node_modules/,
-                    use: {
+                    use: [{
                         loader: "babel-loader"
-                    }
+                    }]
                 },
                 {
                     test: /\.html$/,

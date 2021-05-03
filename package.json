@@ -1,45 +1,33 @@
 {
-  "name": "nl-ops-wv",
-  "version": "1.0.0",
-  "description": "",
-  "main": "webpack.config.js",
-  "scripts": {
-    "start": "webpack-dev-server --open --mode development",
-    "build-prod": "webpack --mode production",
-    "deploy-prod": "aws s3 sync dist/ s3://nl-ops-wv-prod --acl public-read"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "@babel/core": "^7.11.4",
-    "@babel/plugin-proposal-class-properties": "^7.10.4",
-    "@babel/preset-env": "^7.11.0",
-    "@babel/preset-react": "^7.10.4",
-    "babel-loader": "^8.1.0",
-    "css-loader": "^4.2.2",
-    "file-loader": "^6.0.0",
-    "html-loader": "^1.3.0",
-    "html-webpack-plugin": "^4.3.0",
-    "style-loader": "^1.2.1",
-    "terser-webpack-plugin": "^4.1.0",
-    "webpack": "^4.44.1",
-    "webpack-cli": "^3.3.12",
-    "webpack-dev-server": "^3.11.0"
-  },
-  "dependencies": {
-    "@ant-design/icons": "^4.2.2",
-    "@here/maps-api-for-javascript": "https://repo.platform.here.com/artifactory/api/npm/maps-api-for-javascript/-/@here/maps-api-for-javascript-1.18.1.tgz",
-    "antd": "^4.6.1",
-    "array-move": "^3.0.1",
-    "axios": "^0.20.0",
-    "localforage": "^1.9.0",
-    "moment": "^2.29.1",
-    "react": "^16.13.1",
-    "react-beautiful-dnd": "^13.0.0",
-    "react-dom": "^16.13.1",
-    "react-helmet": "^6.1.0",
-    "react-hotkeys": "^2.0.0",
-    "react-router-dom": "^5.2.0"
-  }
+    "name": "fit-fam-frotend",
+    "version": "1.0.0",
+    "description": "",
+    "main": "webpack.config.js",
+    "scripts": {
+        "start": "webpack-dev-server --open --mode development"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@babel/core": "^7.11.4",
+        "@babel/plugin-proposal-class-properties": "^7.10.4",
+        "@babel/preset-env": "^7.11.0",
+        "@babel/preset-react": "^7.10.4",
+        "babel-loader": "^8.1.0",
+        "css-loader": "^4.2.2",
+        "file-loader": "^6.0.0",
+        "html-loader": "^1.3.0",
+        "html-webpack-plugin": "^4.3.0",
+        "style-loader": "^1.2.1",
+        "terser-webpack-plugin": "^4.1.0",
+        "webpack": "^4.44.1",
+        "webpack-cli": "^3.3.12",
+        "webpack-dev-server": "^3.11.0"
+    },
+    "dependencies": {
+        "react": "^16.13.1",
+        "react-dom": "^16.13.1",
+        "react-router-dom": "^5.2.0"
+    }
 }
